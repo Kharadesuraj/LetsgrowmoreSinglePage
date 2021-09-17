@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Baloo+Bhai+2:wght@600&family=Courgette&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+
+html::-webkit-scrollbar{
+    width: 1.2rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #333;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(220, 235, 255);
+}
+
+body{
+    /* background-color: rgb(184, 196, 250); */
+    background-color: black;
+}
+
+section{
+    padding: 100px 0;
+}
+
+*::selection{
+    background: cornflowerblue;
+    color: #333;
+}
+
+.navbar{
+    display: flex;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0px 100px;
+    
+}
+
+
+.navbar .logo img{
+    height: 4.5rem;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    left: -100%;
+}
+
+.navbar li {
+    margin: 0 5px ;
+}
+
+.logo{
+    color: #fff;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.navbar ul li a{
+    color: #fff;
+    margin: 0px 5px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+}
+
+.navbar ul li a:hover{
+    border: 2px solid wheat;
+    background-color: whitesmoke;
+    color: #333;
+    border-radius: 15px;
+    font-weight: 600;
+    
+}
+
+.navbar .menu-btn.active{
+    left: 0;
+}
+
+.navbar .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    position: fixed;
+    cursor: pointer;
+    display: none;
+    
+}
+
+#click{
+    display: none;
+}
+
+.home{
+    width: 100%;
+    /* margin-top: 80px; */
+    /* background-color: rgb(14, 35, 131); */
+    padding-bottom: 20px;
+}
+
+.home h2{
+    text-align: center;
+    padding-top: 2rem;
+    color: whitesmoke;
+    font-family: 'Courgette', cursive;
+    font-size: 34px;
+}
+
+.home .left{
+    width: 45%;
+}
+
+.home .left img{
+    height: 450px;
+    width: 450px;
+    /* padding-left: 50px; */
+    padding-top: 50px;
+    margin-left: 60px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.home .right{
+    width: 55%;
+}
+
+.home-content{
+    
+    padding-right: 50px;
+}
+
+.home .right p{
+    text-align: justify;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1.05rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: rgb(0, 121, 228);
+}
+
+#head{
+    color: rgb(0, 68, 88);
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.home .home-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#primary{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: cornflowerblue;
+    font-size: 50px;
+    font-family: 'Acme', sans-serif;
+    font-weight: 700;
+}
+
+#primary span{
+    color: #fff;
+}
+
+
+
+.about-content{
+    display: flex;
+}
+
+.about .left{
+    width: 45%;
+    /* display: flex; */
+}
+
+.about .right{
+    width: 55%;
+    padding-left: 40px;
+}
+
+.about .left p{
+    text-align: justify;
+    padding: 20px;
+    color: whitesmoke;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+
+.about-content .right img{
+    height: 600px;
+    width: 700px;
+    padding-top: 20px; 
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.staff{
+    align-items: center;
+    
+}
+
+.staff-content
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* margin: 34px; */
+}
+
+.staff-content .box img{
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    height: 250px;
+}
+
+.staff-content .box h3{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.staff-content .box h4{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.staff-content .box h5{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.staff-content .box{
+    border: 4px solid black;
+    padding: 45px;
+    color: white;
+    margin: 33px 16px;
+    background-color: #333;
+    border-radius: 28px;
+}
+
+.staff-content .box h3 i{
+    color: wheat;
+}
+.staff-content .box h5 i{
+    padding: 2px;
+}
+
+.staff-content .box a{
+    text-decoration: none;
+    color: red;
+    font-size: 15px;
+}
+
+.contact .contact-content{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.contact .contact-content .left{
+    width: 30%;
+}
+
+.contact .contact-content .right{
+    width: 70%;
+}
+
+.contact-content .left h2,h3,h4{
+    color: #fff;
+    margin-top: 20px;
+}
+
+.contact-content span{
+    color: whitesmoke;
+}
+
+.contact-content .right h1{
+    color: #fff;
+}
+
+.contact-content .right form .box{
+    padding: 0.6rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.contact-content .left h2{
+    font-size: 45px;
+    margin-top: 20%;
+    color: cornflowerblue;
+}
+
+.btn{
+    padding: 0.3rem 1.5rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: white;
+    text-align: center;
+}
+
+footer span a{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 1024px){
+    .home .home-content .right{
+        padding-left: 50px;
+    }   
+    
+    .about .right img{
+        height: 350px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 940px) {
+    .navbar ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #333;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .home .right{
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .home .left{
+        padding-left: 10px;
+    }
+
+    #click:checked ~ ul{
+        left: 0;
+    }
+
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+
+   
+    .navbar  ul li{
+        margin: 40px 0;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+        display: block;
+    }
+
+    .navbar .menu-btn i{
+        display: block;
+    }
+
+    .home .home-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home .left{
+        width: 100%;
+    }
+    .about .left{
+        width: 100%;
+    }
+
+    .home .left img{
+        /* height: 200px;
+        width: 500px; */
+        width: 80%;
+        height: 250px;
+        
+    }
+    .about .right img{
+        /* height: 200px;
+        width: 500px; */
+        width: 280px;
+        height: 250px;
+        
+        
+    }
+
+    .about .about-content{
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 768px){
+    .home .left img{
+        width: 80%;
+    }
+
+    .about .right img{
+        width: 90%;
+    }
+    
+    .about .right{
+        /* margin-left: 50px; */
+        width: 100%;
+    }
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-content .left{
+        width: 100%;
+    }
+    .contact-content .right{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 540) {
+    .contact-content .left{
+        width: 100%;
+    }
+
+    .contact-content .right{
+        width: 100%;
+    }
+
+    .contact-content{
+        padding: auto;
+    }
+}
+
+@media (max-width: 400) {
+    .contact-content .left{
+        width: 100%;
+    }
+
+    .contact-content .right{
+        width: 100%;
+    }
+}
+
+@media (max-width: 370px) {
+    .home .left img{
+        width: 80%;
+    }
+
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .contact-content .left{
+        width: 100%;
+    }
+    .contact .contact-content .right{
+        width: 100%;
+    }
+}
